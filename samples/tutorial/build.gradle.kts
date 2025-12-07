@@ -36,7 +36,8 @@ kotlin {
         implementation(libs.compose.material.material3)
         implementation(libs.compose.material.icons)
         implementation(libs.compose.ui.tooling.preview)
-        implementation(projects.circuitFoundation)
+//        implementation(projects.circuitFoundation)
+        implementation("com.slack.circuit:circuit-foundation:0.31.0")
       }
     }
     androidMain {

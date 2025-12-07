@@ -336,10 +336,10 @@ subprojects {
   pluginManager.withPlugin("com.android.library") {
     with(extensions.getByType<LibraryExtension>()) {
       commonAndroidConfig()
-      defaultConfig { minSdk = 23 }
+      defaultConfig { minSdk = 29 }
       testOptions {
         // TODO update once robolectric supports it
-        targetSdk = 35
+        targetSdk = 36
       }
     }
 
@@ -365,7 +365,7 @@ subprojects {
     with(extensions.getByType<ApplicationExtension>()) {
       commonAndroidConfig()
       defaultConfig {
-        minSdk = 23
+        minSdk = 29
         targetSdk = 36
       }
       buildTypes {
@@ -475,20 +475,20 @@ apiValidation {
   // https://github.com/Kotlin/binary-compatibility-validator/issues/16
   ignoredProjects +=
     listOf(
-      "apk",
-      "apps",
-      "benchmark",
-      "bottom-navigation",
-      "circuit-codegen",
-      "coil-rule",
-      "counter",
-      "internal-runtime",
-      "internal-test-utils",
-      "interop",
-      "kotlin-inject",
-      "mosaic",
-      "star",
-      "tacos",
+//      "apk",
+//      "apps",
+//      "benchmark",
+//      "bottom-navigation",
+//      "circuit-codegen",
+//      "coil-rule",
+//      "counter",
+//      "internal-runtime",
+//      "internal-test-utils",
+//      "interop",
+//      "kotlin-inject",
+//      "mosaic",
+//      "star",
+//      "tacos",
       "tutorial",
     )
 }
@@ -511,19 +511,19 @@ develocity {
 
 // Dokka aggregating deps
 dependencies {
-  dokka(projects.backstack)
-  dokka(projects.circuitCodegen)
-  dokka(projects.circuitCodegenAnnotations)
-  dokka(projects.circuitFoundation)
-  dokka(projects.circuitOverlay)
-  dokka(projects.circuitRetained)
-  dokka(projects.circuitRuntime)
-  dokka(projects.circuitRuntimePresenter)
-  dokka(projects.circuitRuntimeScreen)
-  dokka(projects.circuitRuntimeUi)
-  dokka(projects.circuitTest)
-  dokka(projects.circuitx.android)
-  dokka(projects.circuitx.effects)
-  dokka(projects.circuitx.gestureNavigation)
-  dokka(projects.circuitx.overlays)
+//  dokka(projects.backstack)
+//  dokka(projects.circuitCodegen)
+//  dokka(projects.circuitCodegenAnnotations)
+//  dokka(projects.circuitFoundation)
+//  dokka(projects.circuitOverlay)
+//  dokka(projects.circuitRetained)
+//  dokka(projects.circuitRuntime)
+//  dokka(projects.circuitRuntimePresenter)
+//  dokka(projects.circuitRuntimeScreen)
+//  dokka(projects.circuitRuntimeUi)
+//  dokka(projects.circuitTest)
+//  dokka(projects.circuitx.android)
+//  dokka(projects.circuitx.effects)
+//  dokka(projects.circuitx.gestureNavigation)
+//  dokka(projects.circuitx.overlays)
 }
